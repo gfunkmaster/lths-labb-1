@@ -1,0 +1,103 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.header img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.task-form {
+  margin-bottom: 20px;
+}
+
+.task-form input[type="text"],
+.task-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.task-item .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.task-item .description {
+  color: #666;
+}
+
+.task-item .actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-item .actions button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task-item .actions button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .task-form input[type="text"],
+  .task-form textarea {
+    width: calc(100% - 20px);
+  }
+
+  .task-item .actions button {
+    padding: 3px 6px;
+  }
+}
